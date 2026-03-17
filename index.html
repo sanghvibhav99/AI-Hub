@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Resource Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2 id="currentMode">🏠 Home</h2>
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>Categories</h2>
+    <button class="side-btn active" data-filter="home">🏠 Home</button>
+    <button class="side-btn" data-filter="game-dev">🎮 Game Dev</button>
+    <button class="side-btn" data-filter="web-dev">🌐 Web Dev</button>
+    <button class="side-btn" data-filter="creator">🎬 Creator</button>
+    <button class="side-btn" data-filter="automation">⚙ Automation</button>
+    <button class="side-btn" data-filter="research">🔬 Research</button>
+    <button class="side-btn" data-filter="learning">📚 Learn</button>
+    <button class="side-btn" data-filter="data">📊 Data</button>
+    <button class="side-btn" data-filter="frontier">🧠 Frontier AI</button> 
+    <button class="side-btn" data-filter="vibe-coding">🎶 Vibe Coding</button>
+  </aside>
+
+  <!-- MAIN CONTENT -->  
+  <div class="content">
+  <header>
+    <h1>AI Resource Hub</h1>
+    <input type="text" id="searchBar" placeholder="Search tools...">
+  </header>
+
+<section>
+<h2>⭐ Favorites</h2>
+<div class="card-container" id="favoritesContainer"></div>
+</section>
+
+<main>
+<!-- IMAGE GENERATION -->
+<section>
+<h2>Image Generation AI</h2>
+<div class="card-container">
+
+<div class="card" data-name="Banana AI">
+<h3>Banana AI</h3>
+<p>AI-powered image generation and visual creation platform.</p>
+<a href="https://banana.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Stable Diffusion" data-stack="game-dev">
+<h3>Stable Diffusion</h3>
+<p>AI image generator for concept art, textures, and visual assets.</p>
+<a href="https://stability.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Midjourney" data-stack="creator" data-stack="automation">
+<h3>Midjourney</h3>
+<p>High-quality AI image generation known for artistic and cinematic visuals.</p>
+<a href="https://www.midjourney.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Leonardo AI" data-stack="game-dev">
+<h3>Leonardo AI</h3>
+<p>AI image generation platform focused on game assets, illustrations, and creative workflows.</p>
+<a href="https://leonardo.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+<!-- VIDEO / CREATIVE AI -->
+<section>
+<h2>Video & Creative AI</h2>
+<div class="card-container">
+
+<div class="card" data-name="Flames">
+<h3>Flames</h3>
+<p>AI-powered creative video or media generation platform.</p>
+<a href="https://www.flames.blue" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Higgsfield AI" data-stack="creator" data-stack="automation">
+<h3>Higgsfield AI</h3>
+<p>Generative video and image AI platform for cinematic social content, with motion, camera control, and editing workflows.</p>
+<a href="https://higgsfield.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Pencil">
+<h3>Pencil AI</h3>
+<p>AI ad creative and marketing asset generator.</p>
+<a href="https://www.pencil.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Runway ML" data-stack="frontier">
+<h3>Runway ML</h3>
+<p>AI-powered video generation and editing.</p>
+<a href="https://runwayml.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenAI Sora" data-stack="frontier">
+<h3>OpenAI Sora</h3>
+<p>Text-to-video model.</p>
+<a href="https://openai.com/sora" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Synthesia" data-stack="creator" data-stack="automation">
+<h3>Synthesia</h3>
+<p>AI video platform that creates professional avatar-based videos from text scripts.</p>
+<a href="https://www.synthesia.io" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="mstudio ai">
+<h3>MStudio AI</h3>
+<p>AI-powered creative studio for video generation, effects, and social-ready content.</p>
+<a href="https://mstudio.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Design Arena">
+<h3>Design Arena</h3>
+<p>AI design experimentation and visual creativity tool.</p>
+<a href="https://www.designarena.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Unicorn Studio">
+<h3>Unicorn Studio</h3>
+<p>Interactive 3D and visual web design tool.</p>
+<a href="https://www.unicorn.studio" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Project Genie" data-stack="frontier">
+<h3>Project Genie</h3>
+<p>Interactive AI world-generation demo built by DeepMind, allowing users to explore 3D environments created from text prompts.</p>
+<a href="https://labs.google/projectgenie" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- 3D Generation -->
+<section>
+<h2>3D Generation</h2>
+<div class="card-container">
+
+<div class="card" data-name="Luma AI" data-stack="game-dev">
+<h3>Luma AI</h3>
+<p>3D capture and reconstruction tool that turns real-world photos into 3D models.</p>
+<a href="https://www.luma.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Tripo" data-stack="game-dev">
+<h3>Tripo</h3>
+<p>AI platform for creating immersive 3D worlds and environments from text prompts.</p>
+<a href="https://tripo.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Scenario" data-stack="game-dev">
+<h3>Scenario</h3>
+<p>Game-ready AI asset generation tool for consistent visual styles and optimized meshes.</p>
+<a href="https://scenario.gg" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Promethean AI" data-stack="game-dev">
+<h3>Promethean AI</h3>
+<p>AI world-building assistant that helps place assets and layout game environments.</p>
+<a href="https://prometheanai.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="DreamForge AI" data-stack="frontier">
+<h3>DreamForge AI</h3>
+<p>AI world-building engine for creating immersive 3D and virtual environments.</p>
+<a href="https://www.dreamforge.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Microsoft Image to 3D" data-stack="game-dev">
+<h3>Microsoft Image to 3D</h3>
+<p>AI tool from Microsoft that converts 2D images into 3D models automatically.</p>
+<a href="https://www.microsoft.com/ai/image-to-3d" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- AI PRESENTATION TOOLS -->
+<section>
+<h2>AI Presentation Tools</h2>
+<div class="card-container">
+
+<div class="card" data-name="Gamma" data-stack="creator" data-stack="automation">
+<h3>Gamma</h3>
+<p>AI tool for generating presentations, docs, and websites with interactive layouts.</p>
+<a href="https://gamma.app" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Beautiful.ai" data-stack="creator" data-stack="automation">
+<h3>Beautiful.ai</h3>
+<p>Smart presentation software that auto-formats slides and designs layouts instantly.</p>
+<a href="https://www.beautiful.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Tome AI" data-stack="creator" data-stack="automation">
+<h3>Tome AI</h3>
+<p>AI-powered presentation tool that generates slide decks, narratives, and visuals from simple prompts.</p>
+<a href="https://tome.app" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- THINKING & CODING MODELS -->
+<section>
+<h2>Thinking & Coding Models</h2>
+<div class="card-container">
+
+<!-- 🧠 Thinking / Reasoning Models -->
+
+<div class="card" data-name="Claude" data-stack="web-dev" data-stack="vibe-coding">
+<h3>Claude</h3>
+<p>Advanced reasoning AI focused on long context understanding and structured thinking.</p>
+<a href="https://claude.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="LangGraph" data-stack="vibe-coding">
+<h3>LangGraph</h3>
+<p>Stateful orchestration framework for building multi-step, multi-agent AI workflows on top of LangChain.</p>
+<a href="https://langchain.com/langgraph" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Inworld AI" data-stack="game-dev">
+<h3>Inworld AI</h3>
+<p>AI NPC engine that adds personality, memory, and emotion to game characters.</p>
+<a href="https://www.inworld.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="DeepSeek" data-stack="research" data-stack="vibe-coding">
+<h3>DeepSeek</h3>
+<p>AI-powered research assistant for deep data insights and document exploration.</p>
+<a href="https://deepseek.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Weavy AI" data-stack="frontier" data-stack="vibe-coding">
+<h3>Weavy AI</h3>
+<p>Embeddable AI chat, messaging, and collaboration SDK for apps and platforms.</p>
+<a href="https://www.weavy.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Speecma" data-stack="research">
+<h3>Speecma</h3>
+<p>Voice data analysis and research platform with AI transcription and insights.</p>
+<a href="https://speecma.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Taskade" data-stack="research" data-stack="vibe-coding">
+<h3>Taskade</h3>
+<p>Collaborative workspace and research/project management tool with AI task suggestions.</p>
+<a href="https://www.taskade.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Grok" data-stack="research" data-stack="vibe-coding">
+<h3>Grok</h3>
+<p>AI assistant developed by xAI, focused on real-time information, reasoning, and conversational intelligence.</p>
+<a href="https://grok.x.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="ChatGPT" data-stack="web-dev" data-stack="research" data-stack="vibe-coding">
+<h3>ChatGPT</h3>
+<p>General-purpose AI assistant for reasoning, coding, writing, and analysis.</p>
+<a href="https://chat.openai.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="CrewAI">
+<h3>CrewAI</h3>
+<p>Multi-agent AI framework where specialized agents collaborate to complete complex tasks.</p>
+<a href="https://crewai.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Perplexity AI" data-stack="research">
+<h3>Perplexity AI</h3>
+<p>AI-powered search engine with cited answers and research-focused outputs.</p>
+<a href="https://www.perplexity.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<!-- 💻 Coding-Focused AI -->
+
+<div class="card" data-name="GitHub Copilot" data-stack="web-dev">
+<h3>GitHub Copilot</h3>
+<p>AI coding assistant integrated directly into IDEs for real-time code generation.</p>
+<a href="https://github.com/features/copilot" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenAI Codex" data-stack="web-dev" data-stack="vibe-coding">
+<h3>OpenAI Codex</h3>
+<p>AI coding and agent assistant that can write, fix, and automate software tasks across projects.</p>
+<a href="https://openai.com/index/introducing-the-codex" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Windsurf">
+<h3>Windsurf</h3>
+<p>AI-native code editor by Codeium designed for agent-based development and intelligent refactoring.</p>
+<a href="https://windsurf.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenCode" data-cstack"vibe-coding">
+<h3>OpenCode</h3>
+<p>AI-powered code environment and agent workspace, deployable and integratable with existing tools.</p>
+<a href="https://clawder.app/open-code" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Clawder (AI Agent Platform)">
+<h3>Clawder (OpenClaw Hosting)</h3>
+<p>Managed AI agent and workspace platform including OpenClaw and OpenCode deployments.</p>
+<a href="https://clawder.app" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Cursor" data-stack="web-dev" data-stack="vibe-coding">
+<h3>Cursor</h3>
+<p>AI-powered code editor designed for intelligent debugging and intelligent code generation.</p>
+<a href="https://cursor.sh" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Codeium" data-stack="web-dev" data-stack="vibe-coding">
+<h3>Codeium</h3>
+<p>Free AI code completion tool supporting multiple programming languages.</p>
+<a href="https://www.codeium.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<!-- 🌍 General AI Assistants -->
+
+<div class="card" data-name="Gemini" data-stack="vibe-coding">
+<h3>Gemini</h3>
+<p>Google’s multimodal AI model supporting text, image, and reasoning tasks.</p>
+<a href="https://gemini.google.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Google AI Studio" data-stack="research" data-stack="vibe-coding">
+<h3>Google AI Studio</h3>
+<p>Web-based playground for building and testing prompts, chat agents, and generative AI apps using Google models.</p>
+<a href="https://aistudio.google.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="LangChain" data-stack="web-dev" data-stack="vibe-coding">
+<h3>LangChain</h3>
+<p>Framework for building applications powered by large language models with memory, tools, and agents.</p>
+<a href="https://langchain.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Mistral AI">
+<h3>Mistral AI</h3>
+<p>Open-weight AI models focused on performance and efficient reasoning.</p>
+<a href="https://mistral.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Semantic Scholar" data-stack="research">
+<h3>Semantic Scholar</h3>
+<p>Academic paper search engine with AI insights.</p>
+<a href="https://www.semanticscholar.org" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="You.com AI">
+<h3>You.com AI</h3>
+<p>AI-powered search and assistant platform with productivity tools.</p>
+<a href="https://you.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Orchids">
+<h3>Orchids</h3>
+<p>AI development assistant improving software workflows.</p>
+<a href="https://www.orchids.app" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- AI PLATFORMS / MODEL HUBS -->
+<section>
+<h2>AI Platforms & Model Hubs</h2>
+<div class="card-container">
+
+<div class="card" data-name="Poe" data-stack="vibe-coding">
+<h3>Poe</h3>
+<p>Platform to access multiple AI models in one place.</p>
+<a href="https://poe.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="AllGPT" data-stack="vibe-coding">
+<h3>AllGPT</h3>
+<p>Directory and access portal for GPT-based tools.</p>
+<a href="https://allgpt.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="AIxploria" data-stack="vibe-coding">
+<h3>AIxploria</h3>
+<p>Large directory of AI tools across categories.</p>
+<a href="https://www.aixploria.com/en/" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Yupp AI">
+<h3>Yupp AI</h3>
+<p>AI assistant platform and experimentation tool.</p>
+<a href="https://yupp.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="LBRY AI">
+<h3>LBRY AI</h3>
+<p>AI-focused tool and content discovery platform.</p>
+<a href="https://lbrty.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Z AI">
+<h3>Z AI</h3>
+<p>General-purpose conversational AI platform.</p>
+<a href="https://chat.z.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Google Antigravity" data-stack="vibe-coding">
+<h3>Google Antigravity</h3>
+<p>Experimental AI creativity playground.</p>
+<a href="https://antigravity.google" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Google Stitch" data-stack="vibe-coding">
+<h3>Google Stitch</h3>
+<p>AI-generated UI layout experimentation tool.</p>
+<a href="https://stitch.withgoogle.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Rowboat Labs">
+<h3>Rowboat Labs</h3>
+<p>AI research and product experimentation studio.</p>
+<a href="https://www.rowboatlabs.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- AUTOMATION / MARKETING -->
+<section>
+<h2>Automation & Marketing AI</h2>
+<div class="card-container">
+
+<div class="card" data-name="OpenClaw">
+<h3>OpenClaw</h3>
+<p>Open-source AI assistant that runs tasks, automations, and multi-agent workflows from chat apps or local servers.</p>
+<a href="https://openclaw.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Make" data-stack="automation">
+<h3>Make</h3>
+<p>Visual automation platform for connecting apps, APIs, and workflows without heavy coding.</p>
+<a href="https://make.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Zapier" data-stack="automation">
+<h3>Zapier</h3>
+<p>Popular no-code automation tool for connecting thousands of apps and services.</p>
+<a href="https://zapier.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="n8n" data-stack="automation">
+<h3>n8n</h3>
+<p>Open-source workflow automation tool with powerful customization and self-hosting options.</p>
+<a href="https://n8n.io" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Gumloop" data-stack="automation">
+<h3>Gumloop</h3>
+<p>AI-powered automation builder for creating agent-driven workflows with visual logic blocks.</p>
+<a href="https://gumloop.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenClaw Mobile" data-stack="automation">
+<h3>OpenClaw Mobile</h3>
+<p>Mobile version of OpenClaw that automates tasks across apps with natural language — no coding needed.</p>
+<a href="https://openclawmobile.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="ManyChat" data-stack="automation">
+<h3>ManyChat</h3>
+<p>Chat automation for marketing and messaging platforms.</p>
+<a href="https://manychat.partnerlinks.io/p2hk1k5k027p-ogcg6e" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Boosend" data-stack="automation">
+<h3>Boosend</h3>
+<p>Email marketing automation powered by AI tools.</p>
+<a href="https://boosend.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenInApp">
+<h3>OpenInApp</h3>
+<p>Link optimization and smart redirection platform.</p>
+<a href="https://openinapp.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Clerk" data-stack="frontier">
+<h3>Clerk</h3>
+<p>User authentication, identity management, and AI-assisted signup/sign-in flows for apps.</p>
+<a href="https://clerk.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- LEARNING / COMMUNITY -->
+<section>
+<h2>Learning & Community</h2>
+<div class="card-container">
+
+<div class="card" data-name="Class Central" data-stack="learning">
+<h3>Class Central</h3>
+<p>Search engine for online courses and certifications.</p>
+<a href="https://www.classcentral.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="With Diode" data-stack="learning">
+<h3>With Diode</h3>
+<p>AI-driven creative tooling platform(Arduino).</p>
+<a href="https://www.withdiode.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+
+<div class="card" data-name="Seeing Theory" data-stack="learning">
+<h3>Seeing Theory</h3>
+<p>Interactive visual guide to statistics and probability.</p>
+<a href="https://seeing-theory.brown.edu" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="SebTips Community" data-stack="learning">
+<h3>SebTips Community</h3>
+<p>Creator and AI-focused learning community.</p>
+<a href="https://sebtips.kit.com/community" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Exercism" data-stack="learning">
+<h3>Exercism</h3>
+<p>Practice coding with mentorship.</p>
+<a href="https://exercism.org" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="DeepLearning.AI" data-stack="learning">
+<h3>DeepLearning.AI</h3>
+<p>AI and ML courses by industry leaders.</p>
+<a href="https://www.deeplearning.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Fast.ai" data-stack="learning">
+<h3>Fast.ai</h3>
+<p>Practical deep learning courses.</p>
+<a href="https://www.fast.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+
+</div>
+</section>
+
+<!-- AI MUSIC/AUDIO GENERATION -->
+<section>
+<h2>AI Music/Audio Generation </h2>
+<div class="card-container">
+
+<div class="card" data-name="Suno AI" data-stack="game-dev" data-stack="creator" data-stack="automation">
+<h3>Suno AI</h3>
+<p>AI music generation platform that creates full songs with vocals, lyrics, and instrumentation from simple prompts.</p>
+<a href="https://suno.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="AIVA" data-stack="game-dev">
+<h3>AIVA</h3>
+<p>AI composer that generates emotional music scores for videos, games, and projects.</p>
+<a href="https://www.aiva.ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Boomy" data-stack="creator" data-stack="automation">
+<h3>Boomy</h3>
+<p>AI music generator that lets users create and publish songs in minutes.</p>
+<a href="https://www.boomy.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+  <div class="card" data-name="Soundraw" data-stack="creator" data-stack="automation">
+<h3>Soundraw</h3>
+<p>AI music creation tool tailored for content creators with customizable styles.</p>
+<a href="https://soundraw.io" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Mubert" data-stack="creator" data-stack="automation">
+<h3>Mubert</h3>
+<p>Generative AI music engine for streaming, background audio, and live performance.</p>
+<a href="https://mubert.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Amper Music">
+<h3>Amper Music</h3>
+<p>AI music composition platform aimed at filmmakers, creators, and advertisers.</p>
+<a href="https://www.ampermusic.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="ElevenLabs" data-stack="game-dev" data-stack="vibe-coding">
+<h3>ElevenLabs</h3>
+<p>Advanced AI voice platform for lifelike text-to-speech, voice cloning, sound effects, and voice agents across languages.</p>
+<a href="https://elevenlabs.io" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="15.ai">
+  <h3>15.ai</h3>
+  <p>AI voice synthesis project focused on character-style speech generation from text prompts.</p>
+  <a href="https://15.ai" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="OpenAI Codex">
+  <h3>OpenAI Codex</h3>
+  <p>AI coding agent that writes, edits, and automates software development tasks.</p>
+  <a href="https://openai.com/index/introducing-the-codex" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2> Data Tools</h2>
+<div class="card-container">
+
+<div class="card" data-name="Kaggle" data-stack="data">
+  <h3>Kaggle</h3>
+  <p>Datasets and ML competitions.</p>
+  <a href="https://www.kaggle.com" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Hugging Face" data-stack="data">
+  <h3>Hugging Face</h3>
+  <p>Models, datasets, and ML community hub.</p>
+  <a href="https://huggingface.co" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Papers With Code" data-stack="data">
+  <h3>Papers With Code</h3>
+  <p>Research papers linked with implementations.</p>
+  <a href="https://paperswithcode.com" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- STARTUP -->
+<section>
+<h2>Startup & Resources</h2>
+<div class="card-container">
+
+<div class="card" data-name="Startup Perks">
+<h3>Startup Perks</h3>
+<p>Discounts and offers for startup founders.</p>
+<a href="https://startup-perks.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- ENTERTAINMENT -->
+<section>
+<h2>Entertainment</h2>
+<div class="card-container">
+
+<div class="card" data-name="FMHY">
+<h3>FMHY</h3>
+<p>Free resources directory for various tools.</p>
+<a href="https://fmhy.net" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- UI / FRONTEND TOOLS -->
+<section>
+<h2>UI / Frontend Tools</h2>
+<div class="card-container">
+
+<div class="card" data-name="Rive" data-stack="web-dev" data-stack="vibe-coding">
+<h3>Rive</h3>
+<p>Interactive animation and motion design tool for apps and websites.</p>
+<a href="https://rive.app" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="21st.dev" data-stack="web-dev">
+<h3>21st.dev</h3>
+<p>Modern UI component community for developers.</p>
+<a href="https://21st.dev/community/components" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="shadcn/ui" data-stack="web-dev">
+<h3>shadcn/ui</h3>
+<p>Beautiful React components built with Tailwind CSS.</p>
+<a href="https://ui.shadcn.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Barba.js">
+<h3>Barba.js</h3>
+<p>JavaScript library for smooth page transitions.</p>
+<a href="https://barba.js.org" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="React Bits" data-stack="web-dev">
+<h3>React Bits</h3>
+<p>Collection of modern React UI components.</p>
+<a href="https://reactbits.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="UIBall LDRs">
+  <h3>UIBall LDRs</h3>
+  <p>Low-dimensional responsive interactions and animation primitives for modern UI.</p>
+  <a href="https://uiball.com/ldrs/" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="CSS Grid Generator" data-stack="web-dev">
+<h3>CSS Grid Generator</h3>
+<p>Visual CSS grid layout builder.</p>
+<a href="https://cssgridgenerator.io" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+<!-- APP & WEB GENERATION -->
+<section>
+<h2>App & Web Generation AI</h2>
+<div class="card-container">
+
+<div class="card" data-name="Vercel v0" data-stack="web-dev" data-stack="vibe-coding">
+<h3>v0 by Vercel</h3>
+<p>AI-powered UI and web app generator that creates production-ready React components from prompts.</p>
+<a href="https://v0.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Bolt.new" data-stack="web-dev">
+<h3>Bolt.new</h3>
+<p>Prompt-to-fullstack web app generator that builds and deploys applications instantly.</p>
+<a href="https://bolt.new" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Replit AI" data-stack="web-dev" data-stack="vibe-coding">
+<h3>Replit AI</h3>
+<p>AI-assisted coding environment that can generate and deploy apps directly in the browser.</p>
+<a href="https://replit.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Lovable" data-stack="web-dev">
+<h3>Lovable</h3>
+<p>AI-powered app builder that turns prompts into working web applications with modern UI.</p>
+<a href="https://lovable.dev" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Durable AI" data-stack="web-dev">
+<h3>Durable AI</h3>
+<p>Instant AI website builder that generates business websites in seconds.</p>
+<a href="https://durable.co" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Framer AI" data-stack="web-dev">
+<h3>Framer AI</h3>
+<p>AI website builder that generates responsive sites with editable design components.</p>
+<a href="https://www.framer.com/ai" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Supabase" data-stack="web-dev">
+<h3>Supabase</h3>
+<p>Open-source backend platform offering Postgres database, authentication, storage, and real-time APIs for web and mobile apps.</p>
+<a href="https://supabase.com" target="_blank">Visit</a>
+<button class="fav-btn">☆</button>
+</div>
+
+<div class="card" data-name="Flux AI">
+  <h3>Flux AI</h3>
+  <p>AI assistant for design, prototyping, and workflow automation in web and app creation.</p>
+  <a href="https://flux.ai" target="_blank">Visit</a>
+  <button class="fav-btn">☆</button>
+</div>
+
+</div>
+</section>
+
+</div> <!-- content -->
+</div> <!-- layout -->
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

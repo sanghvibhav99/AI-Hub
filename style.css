@@ -1,0 +1,167 @@
+/* ===== GLOBAL ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* ===== LAYOUT ===== */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #111827;
+  padding: 20px;
+  border-right: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+.side-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #1e293b;
+  border: none;
+  color: #e2e8f0;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.side-btn:hover {
+  background: #334155;
+}
+
+.side-btn.active {
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  border-bottom: 1px solid #1f2937;
+}
+
+#searchBar {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* ===== SECTIONS ===== */
+
+section {
+  padding: 30px;
+}
+
+h2 {
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== CARD GRID ===== */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ===== CARD ===== */
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.25s ease;
+  border: 1px solid #1f2937;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+  border-color: #38bdf8;
+}
+
+/* ===== FAVORITES ===== */
+
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #38bdf8;
+  align-self: flex-end;
+  transition: 0.2s;
+}
+
+.fav-btn:hover {
+  transform: scale(1.2);
+}
+
+.fav-btn.active {
+  color: gold;
+}
+
+/* ===== FAVORITES SECTION ===== */
+
+#favoritesContainer .card {
+  border: 1px solid gold;
+}
+
+/* ===== SCROLLBAR (optional but cool) ===== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
